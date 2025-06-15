@@ -127,23 +127,3 @@ npm run dev
 
 ## ❌ DELETE /contacts/:contactId
 Видалити контакт за ID.
-
-
-## 🧪 Реалізовано:
-Валідація
-Middleware validateBody(schema) створює Joi-валідацію.
-Для POST і PATCH валідуються всі обов’язкові поля.
-Поля типу string мають довжину 3–20 символів.
-
-Пагінація
-GET /contacts?page=2&perPage=5
-Повертаються: page, perPage, totalItems, totalPages, hasPreviousPage, hasNextPage
-
-Сортування
-sortBy=name, sortOrder=asc|desc
-За замовчуванням сортування у висхідному порядку
-
-Фільтрація
-type=home|personal
-isFavourite=true|false
-
